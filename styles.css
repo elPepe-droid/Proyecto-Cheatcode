@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+header {
+    position: relative;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 10em;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    transition: background-image 0.5s ease-in-out;    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 5em;
+    color: #000;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(8px);
+    z-index: -1;
+    backdrop-filter: blur(8px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.content {
+    padding: 20px; /* Ajusta según sea necesario */
+    max-width: 2000px; /* Establece el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.gameCard {
+    background-color: #333;
+    padding: 0.5em; /* Puedes ajustar este valor según tus preferencias */
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    max-width: 250px; /* Puedes ajustar este valor según tus necesidades */
+    margin: 0; /* Elimina el margen en la parte superior e inferior */
+    margin-left: 20px; /* Puedes ajustar este valor según tus necesidades */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.gameCard a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: white; /* Establece el color del texto a blanco */
+}
+
+.gameCard:hover {
+    transform: scale(1.1); /* Aumenta la escala al hacer hover */
+    background-color: #808080;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+footer:hover {
+    opacity: 0.9;
+}
+
+footer a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+header a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Otros estilos CSS existentes ... */
+
+.right-aligned-content {
+    text-align: right;
+    margin-top: 20px; /* Ajusta según sea necesario */
+    
+}
+
+.right-aligned-content img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-height: 400px; /* Ajusta según sea necesario para limitar la altura */
+    width: auto; /* Hace que el ancho se ajuste automáticamente para mantener las proporciones */
+    height: auto; /* Hace que la altura se ajuste automáticamente para mantener las proporciones */
+}
