@@ -1,22 +1,36 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Plantilla pantalla index</title>
-		<link rel="stylesheet" href="styles.css">
-	</head>
-	<body>
-		<header><h1>CheatCodes.com</h1></header>
-		<div class="navegator"></div>
-		<div class="content">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla pantalla index</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><h1>CheatCodes.com</h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Todos los juegos</a>
+                <div class="dropdown-content">
+                    <a href="pc.html">Juegos de PC</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
 			<h1>Bienvenido a CheatCodes.com</h1>
 			<h2>&Uacute;ltimos juegos a&ntilde;adidos</h2>
 			<div class="gameCard">
-				<a href="gta-san-andreas.html">
+				<a href="gta-san-andreas-pc.html">
 					<h3>GTA San Andreas</h3>
 					<img src="img1.png">
 				</a>
 			</div>
-		</div>
-		<footer>&copy; CheatCodes.com 2023</footer>
-	</body>
+    </div>
+    <footer>&copy; CheatCodes.com 2023</footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
