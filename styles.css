@@ -47,21 +47,24 @@ header::before {
 }
 
 .content {
-    padding: 20px; /* Ajusta según sea necesario */
-    max-width: 2000px; /* Establece el ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px;
+    max-width: 100%;
+    margin: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
 }
 
 .gameCard {
     background-color: #333;
-    padding: 0.5em; /* Puedes ajustar este valor según tus preferencias */
+    padding: 0.5em;
     border-radius: 10px;
     color: white;
     text-align: center;
-    max-width: 250px; /* Puedes ajustar este valor según tus necesidades */
-    margin: 0; /* Elimina el margen en la parte superior e inferior */
-    margin-left: 20px; /* Puedes ajustar este valor según tus necesidades */
+    max-width: 250px;
+    margin: 20px 10px;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    flex: 1;
 }
 
 .gameCard a {
@@ -107,17 +110,207 @@ header a:hover {
     text-decoration: underline;
 }
 
-/* Otros estilos CSS existentes ... */
-
-.right-aligned-content {
-    text-align: right;
-    margin-top: 20px; /* Ajusta según sea necesario */
-    
+nav {
+    background-color: #333; /* Fondo oscuro para el nav */
+    padding: 1em;
+    border-radius: 10px;
 }
 
-.right-aligned-content img {
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-    max-height: 400px; /* Ajusta según sea necesario para limitar la altura */
-    width: auto; /* Hace que el ancho se ajuste automáticamente para mantener las proporciones */
-    height: auto; /* Hace que la altura se ajuste automáticamente para mantener las proporciones */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Texto blanco para los enlaces del nav */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Texto blanco para los enlaces del nav */
+    border-radius: 5px; /* Agrega el border-radius deseado */
+    padding: 5px 10px; /* Ajusta el relleno según sea necesario */
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out; /* Agrega transiciones para suavizar el efecto */
+}
+
+nav a:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el ratón sobre los enlaces */
+}
+
+/* Agrega estos estilos al final de tu archivo styles.css */
+
+/* Dropdown container */
+.dropdown {
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+.dropbtn:hover {
+    background-color: #555;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+img.writer{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.author-info {
+    display: flex;
+    align-items: flex-start; /* Alinea al inicio del contenedor */
+    margin-bottom: 10px; /* Ajusta según sea necesario */
+}
+
+.author-name {
+    margin: 0;
+    font-size: 1.5em; /* Ajusta según sea necesario */
+}
+
+.author-details {
+    margin-left: 10px; /* Ajusta el margen según sea necesario */
+}
+
+.author-date {
+    margin: 0;
+    font-size: 1em; /* Ajusta el tamaño de la fecha según sea necesario */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav {
+    /* ... tus estilos de navegación existentes ... */
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 8px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-bar button:hover {
+    background-color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.nav-text {
+    align-self: flex-end; /* Esto alinea el texto al final del contenedor flex (nav) */
+}
+
+.animals a{
+    color: white;
+    text-decoration: none;
+}
+
+#searchbar {
+    width: 150px; /* Puedes ajustar el valor según tus necesidades */
+    height: 30px; /* Puedes ajustar el valor según tus necesidades */
+    border-radius: 15px; /* Puedes ajustar el valor según tus necesidades */
+    padding-left: 1em;
+}
+
+.gameCard img{
+    width: 150px;
+    height: 200px;
+}
+
+.intro-text {
+    max-width: 100%;
+}
+
+.gameContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
