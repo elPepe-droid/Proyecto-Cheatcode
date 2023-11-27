@@ -338,3 +338,21 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
     background-color: #333; /* Color del fondo de la barra de desplazamiento */
 }
+
+/* Estilos para los resultados de búsqueda */
+.animals {
+    background-color: #333;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.animals a {
+    color: white;
+    text-decoration: none;
+}
+
+.animals:hover {
+    background-color: #555;
+}
